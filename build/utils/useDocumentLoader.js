@@ -76,6 +76,6 @@ exports.useDocumentLoader = function () {
         return function () {
             controller.abort();
         };
-    }, [CurrentRenderer]);
+    }, [CurrentRenderer, currentFileNo]);
     return { state: state, dispatch: dispatch, CurrentRenderer: CurrentRenderer };
 };
